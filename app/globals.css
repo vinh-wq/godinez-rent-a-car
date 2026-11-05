@@ -1,0 +1,12 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html{scroll-behavior:smooth}body{background:#0A0A0B;color:#cfcfd4}
+.gold-text{background:linear-gradient(120deg,#B8860B,#F5D77A 45%,#B8860B);-webkit-background-clip:text;background-clip:text;color:transparent}
+.chrome-text{background:linear-gradient(180deg,#fff,#9a9aa2);-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn-gold{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.85rem 1.6rem;font-weight:700;color:#0A0A0B;background:linear-gradient(120deg,#B8860B,#F5D77A 50%,#B8860B);background-size:200% 100%;transition:background-position .5s,box-shadow .3s,transform .3s;transform:skewX(-8deg)}
+.btn-gold>*{display:inline-block;transform:skewX(8deg)}
+.btn-gold:hover{background-position:100% 0;box-shadow:0 0 28px rgba(212,167,44,.45);transform:skewX(-8deg) translateY(-2px)}
+.btn-ghost{display:inline-flex;padding:.85rem 1.6rem;border:1px solid rgba(212,167,44,.5);color:#F5D77A;font-weight:600;transition:background .3s}
+.btn-ghost:hover{background:rgba(212,167,44,.12)}
+.rule{height:1px;background:linear-gradient(90deg,transparent,#D4A72C,transparent)}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
